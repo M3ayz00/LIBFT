@@ -6,16 +6,15 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 22:27:21 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/22 20:08:02 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/24 18:49:36 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if ( fd == -1)
+	if (fd < 0)
 		return ;
 	write(fd, &c, 1);
 }

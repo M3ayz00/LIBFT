@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:11:49 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/22 20:02:33 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/24 18:31:30 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	j;
 
 	if (!dest && size == 0)
-		return (size + ft_strlen(src));
+		return (ft_strlen(src));
 	d_len = ft_strlen(dest);
 	s_len = ft_strlen(src);
 	t_len = d_len + s_len;

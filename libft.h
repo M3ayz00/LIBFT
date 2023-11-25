@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 18:29:16 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/20 23:18:14 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/23 21:35:39 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stddef.h>
 # include <limits.h>
 # include <stdint.h>
+# include <fcntl.h>
 
 int		ft_atoi(const char *str);
 int		ft_isascii(int c);
