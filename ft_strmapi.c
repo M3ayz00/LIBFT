@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 22:05:20 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/12 19:01:40 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:54:53 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	mapped = (char *)ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!mapped)
 		return (NULL);
-	i = 0;
-	while (s[i])
-	{
+	i = -1;
+	while (s[++i])
 		mapped[i] = f(i, s[i]);
-		i++;
-	}
 	return (mapped);
 }
